@@ -1,33 +1,82 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
+import { Link } from "react-router-dom";
 import CourseCardHomePage from "./CourseCardHomePage";
 import InstructorCardHomePage from "./InstructorCardHomePage";
-import Footer from "../../components/Footer";
+
 const Home = () => {
   return (
-    <div className="pt-20">
+    <div className="flex flex-col flex-wrap">
       <Navbar />
-      <div className="flex flex-col flex-wrap justify-center content-center">
-        <form
-          action=""
-          className="sm:w-6/12 h-8 flex flex-row flex-wrap justify-between content-center relative mt-4 mb-5"
-        >
-          <input
-            class="placeholder:italic placeholder:text-slate-400 border border-gray-400 bg-light-gray rounded-xl w-full py-2 pl-4 pr-9 shadow-sm focus:outline-none focus:border-blue-950 focus:ring-blue-950  focus:ring-1 text-sm "
-            placeholder="Apa yang ingin Anda pelajari?"
-            type="text"
-            name="search"
-          />
-          <button className="pe-3 absolute inset-y-0 right-0 flex items-center pl-2">
-            <img src="icons/search.svg" alt="" className="w-6" />
-          </button>
-        </form>
+      <div className="flex flex-col flex-wrap justify-around items-center bg_light_mid_courseQuizzy pt-14 min-h-screen courseQuizzy ">
+        <div className="flex flex-row flex-wrap justify-around ">
+          <div className="w-1/4  flex flex-col flex-wrap justify-center">
+            <div className="font-extrabold text-4xl">
+              UPGRADE YOUR <div className="mid_courseQuizzy">SKILLS</div>{" "}
+              <div>
+                FOR
+                <span className="mid_courseQuizzy"> FREE</span>
+              </div>
+            </div>
+            <div>
+              We are currently provides a premium online course without breaking
+              the bank!
+            </div>
+          </div>
+          <img src="icons/home_page_icon.svg" className="w-1/3" alt="" />
+        </div>
+        <div className="flex flex-row justify-around w-4/5">
+          <Link
+            to="/"
+            className="flex flex-col flex-wrap items-center justify-center gap-2"
+          >
+            <img src="icons/shield_lock.svg" className="w-7" alt="" />
+            <div className="font-bold text-sm">Cybersecurity</div>
+          </Link>
+          <Link
+            to="/"
+            className="flex flex-col flex-wrap items-center justify-center gap-2"
+          >
+            <img src="icons/stacked_line_chart.svg" className="w-7" alt="" />
+            <div className="font-bold text-sm">Business Analyst</div>
+          </Link>
+          <Link
+            to="/"
+            className="flex flex-col flex-wrap items-center justify-center gap-2"
+          >
+            <img src="icons/architecture.svg" className="w-7" alt="" />
+            <div className="font-bold text-sm">UI/UX Designer</div>
+          </Link>
+          <Link
+            to="/"
+            className="flex flex-col flex-wrap items-center justify-center gap-2"
+          >
+            <img src="icons/account_balance.svg" className="w-7" alt="" />
+            <div className="font-bold text-sm">Web Development</div>
+          </Link>
+          <Link
+            to="/"
+            className="flex flex-col flex-wrap items-center justify-center gap-2"
+          >
+            <img src="icons/shield_lock.svg" className="w-7" alt="" />
+            <div className="font-bold text-sm">Data Analyst</div>
+          </Link>
+          <Link
+            to="/"
+            className="flex flex-col flex-wrap items-center justify-center gap-2"
+          >
+            <img src="icons/bar_chart_4_bars.svg" className="w-7" alt="" />
+            <div className="font-bold text-sm">Management</div>
+          </Link>
+        </div>
       </div>
-      <div className="flex flex-col flex-wrap w-full sm:px-20">
-        <div className="mb-14 w-full h-72 bg-gray-300 rounded-xl"></div>
-        <div className="mb-14 w-full">
-          <div className="font-bold text-lg mb-4">Our Top Course</div>
-          <div className="flex flex-row overflow-x-scroll pb-2 gap-5 justify-between items-center custom-x-scrollbar">
+      <div className="w-full px-20 py-20 flex flex-col gap-20">
+        <div>
+          <div className="font-extrabold text-center courseQuizzy text-xl mb-6">
+            Our Top Course
+          </div>
+          <div className="flex flex-row overflow-x-scroll pb-4 px-0.5 gap-5 justify-between items-center custom-x-scrollbar">
             <CourseCardHomePage />
             <CourseCardHomePage />
             <CourseCardHomePage />
@@ -38,34 +87,39 @@ const Home = () => {
             <CourseCardHomePage />
           </div>
         </div>
-        <div className="mb-14 w-full">
-          <div className="font-bold text-lg mb-4">Best To Cybersecurity</div>
-          <div className="flex flex-row overflow-x-scroll pb-2 gap-5 justify-between items-center custom-x-scrollbar">
+        <div>
+          <div className="font-extrabold text-center courseQuizzy text-xl mb-6">
+            Best To Cybersecurity
+          </div>
+          <div className="flex flex-row overflow-x-scroll pb-4 px-0.5 gap-5 justify-between items-center custom-x-scrollbar">
+            <CourseCardHomePage />
+            <CourseCardHomePage />
             <CourseCardHomePage />
             <CourseCardHomePage />
             <CourseCardHomePage />
             <CourseCardHomePage />
           </div>
         </div>
-        <div className="mb-14 bg-courseQuizzy sm:h-36 w-full text-white rounded-xl p-5 flex flex-col flex-wrap justify-center items-center">
-          <div className="font-semibold sm:text-2xl text-sm ">
+        <div className="mb-6 bg_light_mid_courseQuizzy courseQuizzy  w-full text-white rounded-xl px-5 py-6 flex flex-col flex-wrap justify-center items-center poppins my-16">
+          <div className="font-semibold text-xl ">
             Unlock More Benefits by Becoming an Instructor!
           </div>
-          <div className="text-sm sm:text-base">
+          <div className="text-xs font-bold lato">
             Join us today and reap the rewards of sharing your expertise.
           </div>
-          <a
-            href=""
-            className="bg-light-courseQuizzy rounded-lg courseQuizzy font-semibold text-sm py-1.5 px-6 sm:my-8 max-sm:mt-3"
+          <Link
+            to="/"
+            className=" rounded-2xl bg_mid_courseQuizzy text-white  text-xs py-1.5 px-6 mt-5 "
           >
             UPLOAD NOW
-          </a>
+          </Link>
         </div>
         <div className="mb-14">
           <div className="font-semibold text-lg mb-10 mt-5 text-center">
             Meet Our Best Instructors
           </div>
           <div className="flex flex-row flex-wrap gap-5 justify-between">
+            <InstructorCardHomePage />
             <InstructorCardHomePage />
             <InstructorCardHomePage />
             <InstructorCardHomePage />

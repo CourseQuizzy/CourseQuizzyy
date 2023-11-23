@@ -19,7 +19,7 @@ const Navbar = () => {
     // console.log(form.classList)
   };
   return (
-    <div className="flex flex-row flex-wrap justify-between items-center  fixed top-0 w-full shadow-lg backdrop-blur-xl bg-courseQuizzy  z-50 h-14 sm:ps-14 sm:pe-8 py-2 px-5 poppins text-xs">
+    <div className="flex flex-row flex-wrap justify-between items-center fixed top-0  w-full shadow-lg backdrop-blur-xl bg_courseQuizzy  z-50 h-14 sm:ps-14 sm:pe-8 py-2 px-5 poppins text-xs">
       <Link
         to="/"
         className="text-white font-semibold text-2xl flex flex-wrap justify-center align-middle "

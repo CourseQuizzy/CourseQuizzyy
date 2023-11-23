@@ -10,6 +10,9 @@ html {
 .poppins {
   font-family: "Poppins", sans-serif;
 }
+.lato {
+  font-family: "Lato", sans-serif;
+}
 html::-webkit-scrollbar {
   width: 10px;
 }
@@ -26,39 +29,42 @@ html::-webkit-scrollbar-thumb {
   scroll-behavior: smooth;
 }
 .custom-x-scrollbar::-webkit-scrollbar {
-  height: 10px;
+  height: 6px;
 }
 
 .custom-x-scrollbar::-webkit-scrollbar-track {
-  background-color: #f3f3f3;
+  background-color: #f3f3f36b;
   border-radius: 8px;
 }
 
 .custom-x-scrollbar::-webkit-scrollbar-thumb {
   border-radius: 8px;
-  background-color: #70707050;
+  background-color: #d2d2d2;
 }
 .courseQuizzy {
   color: #112d4e;
 }
-.bg-courseQuizzy {
+.bg_courseQuizzy {
   background-color: #112d4e;
 }
 .bg_mid_courseQuizzy {
   background-color: #3f72af;
 }
+.mid_courseQuizzy {
+  color: #3f72af;
+}
 .bg_light_mid_courseQuizzy {
   background-color: #dfeeff;
 }
-.light-courseQuizzy {
+.light_courseQuizzy {
   color: #dbe2ef;
 }
-.bg-light-courseQuizzy {
+.bg_light_courseQuizzy {
   background-color: #dbe2ef;
 }
-.light-gray {
+.light_gray {
   color: #f9f7f7;
 }
-.bg-light-gray {
+.bg_light_gray {
   background-color: #f9f7f7;
 }
