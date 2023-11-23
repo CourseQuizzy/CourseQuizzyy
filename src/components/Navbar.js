@@ -1,36 +1,79 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
 
 const Navbar = () => {
+  const inputRef = useRef(null);
+  const expandSearchBar = () => {
+    const form = document.querySelector("#searchBarForm");
+    form.classList.toggle("flex");
+    form.classList.toggle("hidden");
+    const buttonExpander = document.querySelector("#expandButton");
+    if (form.classList.contains("flex")) {
+      inputRef.current.focus();
+      buttonExpander.classList.add("hidden");
+    } else if (form.classList.contains("hidden")) {
+      buttonExpander.classList.remove("hidden");
+    }
+
+    // console.log(form.classList)
+  };
   return (
-    <div className="flex flex-col flex-wrap fixed top-0 w-full shadow-lg backdrop-blur-xl bg-white/30 z-50">
-      <div className="flex flex-row flex-wrap justify-between content-center sm:ps-14 sm:pe-8 py-2 px-5">
-        <Link
-          to="/"
-          className="courseQuizzy font-semibold text-2xl flex flex-wrap justify-center align-middle"
-        >
-          CourseQuizzy
+    <div className="flex flex-row flex-wrap justify-between items-center  fixed top-0 w-full shadow-lg backdrop-blur-xl bg-courseQuizzy  z-50 h-14 sm:ps-14 sm:pe-8 py-2 px-5 poppins text-xs">
+      <Link
+        to="/"
+        className="text-white font-semibold text-2xl flex flex-wrap justify-center align-middle "
+      >
+        CourseQuizzy
+      </Link>
+      <div className="text-white  flex flex-row flex-wrap justify-between items-center gap-8">
+        <Link to="/" className=" flex flex-wrap justify-center align-middle">
+          Home
         </Link>
-        <div className="flex flex-row flex-wrap justify-between content-center">
-          <button className="me-3 sm:me-4">
-            <img src="icons/sticky_note_2.svg" className="w-6 " alt="" />
+        <Link to="/" className=" flex flex-wrap justify-center align-middle">
+          Courses
+        </Link>
+        <Link to="/" className=" flex flex-wrap justify-center align-middle">
+          About Us
+        </Link>
+        <Link to="/" className=" flex flex-wrap justify-center align-middle">
+          Contact
+        </Link>
+        <div className="flex flex-row flex-wrap items-center justify-center gap-5">
+          <form
+            id="searchBarForm"
+            action=""
+            className="hidden flex-row flex-wrap items-center justify-center gap-5"
+          >
+            <input
+              className="text-black h-7 w-52 px-2 rounded-xl  focus:outline-none"
+              type="text"
+              ref={inputRef}
+              onBlur={expandSearchBar}
+            />
+            <button className="submit">
+              <img src="icons/search.svg" className="w-5 " alt="" />
+            </button>
+          </form>
+          <button id="expandButton" onClick={expandSearchBar} className="">
+            <img src="icons/search.svg" className="w-5" alt="" />
           </button>
-          <button className="me-3 sm:me-6">
-            <img src="icons/notifications.svg" className="w-4 " alt="" />
-          </button>
-          <button className="me-3 sm:me-3 text-sm">Hello, user</button>
           <button className="">
-            <img src="icons/profile_photo.svg" className="w-8" alt="" />
+            <img src="icons/strip.svg" className="h-6" alt="" />
           </button>
+          <Link
+            to="/"
+            className="text-white  flex flex-wrap justify-center align-middle"
+          >
+            Login
+          </Link>
+          <Link
+            to="/"
+            className="text-white flex flex-wrap justify-center align-middle rounded-xl bg_mid_courseQuizzy p-1 px-4"
+          >
+            Register
+          </Link>
         </div>
-      </div>
-      <div className="flex flex-row flex-wrap max-sm:hidden content-center justify-center gap-8 text-xs font-semibold border-t border-gray-200 py-1.5">
-        <a href="">Web Development</a>
-        <a href="">Business Intelligence</a>
-        <a href="">Software Development</a>
-        <a href="">Machine Learning</a>
-        <a href="">Cybersecurity</a>
-        <a href="">All Courses</a>
       </div>
     </div>
   );
