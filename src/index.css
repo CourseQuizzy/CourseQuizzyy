@@ -68,3 +68,13 @@ html::-webkit-scrollbar-thumb {
 .bg_light_gray {
   background-color: #f9f7f7;
 }
+/* Abram */
+.img_gray_bg_color {
+  background-color: #c4c4c4;
+}
+.btn-danger {
+  background-color: #E34444;
+}
+.border-color-mid {
+  border-color: #3f72af;
+}

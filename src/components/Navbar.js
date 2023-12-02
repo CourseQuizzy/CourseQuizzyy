@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 
-const Navbar = () => {
+const Navbar = ({logined}) => {
   const inputRef = useRef(null);
   const expandSearchBar = () => {
     const form = document.querySelector("#searchBarForm");
@@ -61,9 +61,15 @@ const Navbar = () => {
           <button className="">
             <img src="icons/strip.svg" className="h-6" alt="" />
           </button>
-          <Link
+          {logined ? <>
+            <Link to="/" className="flex flex-row items-center gap-4">
+            Nick Nelson
+            <img src="3d_avatar_13.png" className="w-7" alt="" />
+            </Link>
+        </> : 
+        <><Link
             to="/"
-            className="text-white  flex flex-wrap justify-center align-middle"
+            className="text-white flex flex-wrap justify-center align-middle"
           >
             Login
           </Link>
@@ -72,7 +78,8 @@ const Navbar = () => {
             className="text-white flex flex-wrap justify-center align-middle rounded-xl bg_mid_courseQuizzy p-1 px-4"
           >
             Register
-          </Link>
+          </Link></>
+          }
         </div>
       </div>
     </div>
