@@ -60,11 +60,17 @@ html::-webkit-scrollbar-thumb {
   color: #dbe2ef;
 }
 .bg_light_courseQuizzy {
-  background-color: #dbe2ef;
+  background-color: #f2f7ff;
 }
 .light_gray {
   color: #f9f7f7;
 }
 .bg_light_gray {
   background-color: #f9f7f7;
+}
+.border_courseQuizzy {
+  border-color: #112d4e;
+}
+.border_light_courseQuizzy {
+  border-color: #3f72af;
 }

@@ -76,7 +76,7 @@ const Home = () => {
           <div className="font-extrabold text-center courseQuizzy text-xl mb-6">
             Our Top Course
           </div>
-          <div className="flex flex-row overflow-x-scroll pb-4 px-0.5 gap-5 justify-between items-center custom-x-scrollbar">
+          <div className="flex flex-row flex-shrink-0 overflow-x-scroll pb-4 px-0.5 gap-5 justify-between items-center custom-x-scrollbar">
             <CourseCardHomePage />
             <CourseCardHomePage />
             <CourseCardHomePage />

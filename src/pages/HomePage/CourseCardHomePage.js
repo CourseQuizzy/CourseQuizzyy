@@ -2,7 +2,7 @@ import React from "react";
 
 const CourseCardHomePage = () => {
   return (
-    <div className="flex flex-col flex-wrap min-w-min w-48  overflow-hidden rounded-xl shadow-md">
+    <div className="flex flex-col flex-wrap min-w-min w-52  overflow-hidden rounded-xl shadow-md">
       <div className="bg-gray-300  h-32  w-52 mb-3"></div>
       <div className="px-3">
         <div className="text-sm mb-2">

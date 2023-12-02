@@ -42,7 +42,7 @@ const Navbar = () => {
         <div className="flex flex-row flex-wrap items-center justify-center gap-5">
           <form
             id="searchBarForm"
-            action=""
+            action="/catalogue"
             className="hidden flex-row flex-wrap items-center justify-center gap-5"
           >
             <input
