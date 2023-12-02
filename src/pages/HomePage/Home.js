@@ -24,49 +24,49 @@ const Home = () => {
               the bank!
             </div>
           </div>
-          <img src="icons/home_page_icon.svg" className="w-1/3" alt="" />
+          <img src="/icons/home_page_icon.svg" className="w-1/3" alt="" />
         </div>
         <div className="flex flex-row justify-around w-4/5">
           <Link
             to="/"
             className="flex flex-col flex-wrap items-center justify-center gap-2"
           >
-            <img src="icons/shield_lock.svg" className="w-7" alt="" />
+            <img src="/icons/shield_lock.svg" className="w-7" alt="" />
             <div className="font-bold text-sm">Cybersecurity</div>
           </Link>
           <Link
             to="/"
             className="flex flex-col flex-wrap items-center justify-center gap-2"
           >
-            <img src="icons/stacked_line_chart.svg" className="w-7" alt="" />
+            <img src="/icons/stacked_line_chart.svg" className="w-7" alt="" />
             <div className="font-bold text-sm">Business Analyst</div>
           </Link>
           <Link
             to="/"
             className="flex flex-col flex-wrap items-center justify-center gap-2"
           >
-            <img src="icons/architecture.svg" className="w-7" alt="" />
+            <img src="/icons/architecture.svg" className="w-7" alt="" />
             <div className="font-bold text-sm">UI/UX Designer</div>
           </Link>
           <Link
             to="/"
             className="flex flex-col flex-wrap items-center justify-center gap-2"
           >
-            <img src="icons/account_balance.svg" className="w-7" alt="" />
+            <img src="/icons/account_balance.svg" className="w-7" alt="" />
             <div className="font-bold text-sm">Web Development</div>
           </Link>
           <Link
             to="/"
             className="flex flex-col flex-wrap items-center justify-center gap-2"
           >
-            <img src="icons/shield_lock.svg" className="w-7" alt="" />
+            <img src="/icons/shield_lock.svg" className="w-7" alt="" />
             <div className="font-bold text-sm">Data Analyst</div>
           </Link>
           <Link
             to="/"
             className="flex flex-col flex-wrap items-center justify-center gap-2"
           >
-            <img src="icons/bar_chart_4_bars.svg" className="w-7" alt="" />
+            <img src="/icons/bar_chart_4_bars.svg" className="w-7" alt="" />
             <div className="font-bold text-sm">Management</div>
           </Link>
         </div>

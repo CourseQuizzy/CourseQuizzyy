@@ -24,7 +24,7 @@ const CourseCatalogue = () => {
                 <div>Sort by:</div>
                 <div className="rounded-full border border_light_courseQuizzy flex flex-row flex-wrap justify-between items-center w-28 h-7 ps-2 pe-1">
                   <div>Default</div>
-                  <img src="icons/arrow_drop_down.svg" alt="" />
+                  <img src="/icons/arrow_drop_down.svg" alt="" />
                 </div>
               </div>
             </div>
@@ -38,7 +38,7 @@ const CourseCatalogue = () => {
                 placeholder="Search"
               />
               <button className="bg_mid_courseQuizzy w-10 h-10 rounded-xl flex flex-wrap justify-center items-center">
-                <img src="icons/search.svg" className="w-5" alt="" />
+                <img src="/icons/search.svg" className="w-5" alt="" />
               </button>
             </form>
           </div>
@@ -52,13 +52,13 @@ const CourseCatalogue = () => {
               <div className="flex flex-row justify-between items-center text-xs rounded-full border border_light_courseQuizzy h-6 ps-3 pe-2 gap-2">
                 <div>Category 1</div>
                 <button>
-                  <img src="icons/close.svg" className="w-4" alt="" />
+                  <img src="/icons/close.svg" className="w-4" alt="" />
                 </button>
               </div>
               <div className="flex flex-row justify-between items-center text-xs rounded-full border border_light_courseQuizzy h-6  ps-3 pe-2 gap-2">
                 <div>Tao Xu</div>
                 <button>
-                  <img src="icons/close.svg" className="w-4" alt="" />
+                  <img src="/icons/close.svg" className="w-4" alt="" />
                 </button>
               </div>
             </div>

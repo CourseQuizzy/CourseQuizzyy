@@ -10,7 +10,7 @@ const CourseCardHomePage = () => {
         </div>
         <div className="flex flex-row flex-wrap justify-between content-center mb-2">
           <div className="text-xs text-gray-700">by Reza Arap</div>
-          <img src="icons/bookmark.svg" className="w-5 " alt="" />
+          <img src="/icons/bookmark.svg" className="w-5 " alt="" />
         </div>
       </div>
     </div>
