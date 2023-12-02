@@ -28,13 +28,14 @@ const MyLearningPageHome = () => {
                         </div>
                         <div className="search flex gap-2 w-1/2">
                             <input placeholder="Search" className="px-2 w-full rounded-xl"></input>
-                            <button className="bg_mid_courseQuizzy px-3"><img src="icons/search.svg" alt=""></img></button>
+                            <button className="bg_mid_courseQuizzy px-3 rounded-xl"><img src="icons/search.svg" alt=""></img></button>
                         </div>
                     </div>
                     <div className="course-list flex flex-col gap-4">
+                        <CourseItem completed/>
                         <CourseItem />
                         <CourseItem />
-                        <CourseItem />
+                        <CourseItem completed/>
                     </div>
                 </div>
             </div>
