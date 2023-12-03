@@ -56,6 +56,9 @@ html::-webkit-scrollbar-thumb {
 .bg_light_mid_courseQuizzy {
   background-color: #dfeeff;
 }
+.border_light_mid_courseQuizzy {
+  border-color: #dfeeff;
+}
 .light_courseQuizzy {
   color: #dbe2ef;
 }

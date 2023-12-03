@@ -70,7 +70,7 @@ const CourseHomePage = () => {
               </div>
               {isEnrolled ? (
                 <Link
-                  to={"/"}
+                  to={"/courses/1/contents"}
                   className="text-white flex flex-wrap justify-center align-middle rounded-xl bg_mid_courseQuizzy p-2 px-6"
                 >
                   Go To Course
