@@ -3,6 +3,7 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import VideoPlayer from "./VideoPlayer";
 import CourseSection from "./CourseSection/CourseSection";
+import CourseDetails from "./CourseDetails";
 const CourseContent = () => {
   const [selectedSubSection, setSelectedSubSection] = useState("1_3");
   return (
@@ -31,7 +32,9 @@ const CourseContent = () => {
             setSelectedSubSection={setSelectedSubSection}
           />
         </div>
-        <div className="w-5/12 flex flex-col"></div>
+        <div className="w-5/12 flex flex-col">
+          <CourseDetails />
+        </div>
       </div>
       <Footer />
     </div>

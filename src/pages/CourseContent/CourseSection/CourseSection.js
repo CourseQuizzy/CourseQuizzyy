@@ -89,7 +89,7 @@ const CourseSection = ({
     <div className="flex flex-col w-full  overflow-hidden text-sm mt-4">
       <div
         onClick={handleToggleSection}
-        className="bg_mid_courseQuizzy rounded-t-2xl flex flex-row px-4 justify-between items-center text-white py-2"
+        className="bg_mid_courseQuizzy rounded-t-2xl flex flex-row px-4 justify-between items-center text-white py-3"
       >
         <div>Section {idSection} : Lorem Ipsum</div>
         {expandedSection ? (
@@ -99,7 +99,7 @@ const CourseSection = ({
         )}
       </div>
       {expandedSection && (
-        <div className="flex flex-col w-full rounded-b-2xl border-[1.5px] border_light_mid_courseQuizzy">
+        <div className="flex flex-col w-full rounded-b-2xl overflow-hidden border-[1.5px] border_light_mid_courseQuizzy">
           {subIds.map((subId, index) => displaySubSection(subId, index))}
         </div>
       )}
