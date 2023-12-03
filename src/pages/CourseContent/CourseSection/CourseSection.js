@@ -6,6 +6,8 @@ const CourseSection = ({
   selectedSubSection,
   setSelectedSubSection,
   subDone,
+  displayQuiz,
+  setDisplayQuiz,
 }) => {
   const [expandedSection, setExpandedSection] = useState(false);
   const handleToggleSection = () => {
@@ -30,16 +32,8 @@ const CourseSection = ({
             selected={true}
             done={true}
             setSelectedSubSection={setSelectedSubSection}
-          />
-        );
-      } else if (subDone && subDone.includes(subId)) {
-        return (
-          <CourseSubSection
-            key={index}
-            idSection={idSection}
-            subId={subId}
-            done={true}
-            setSelectedSubSection={setSelectedSubSection}
+            displayQuiz={displayQuiz}
+            setDisplayQuiz={setDisplayQuiz}
           />
         );
       } else if (subId === parseInt(selectedSubSection.split("_")[1])) {
@@ -50,6 +44,20 @@ const CourseSection = ({
             subId={subId}
             selected={true}
             setSelectedSubSection={setSelectedSubSection}
+            displayQuiz={displayQuiz}
+            setDisplayQuiz={setDisplayQuiz}
+          />
+        );
+      } else if (subDone && subDone.includes(subId)) {
+        return (
+          <CourseSubSection
+            key={index}
+            idSection={idSection}
+            subId={subId}
+            done={true}
+            setSelectedSubSection={setSelectedSubSection}
+            displayQuiz={displayQuiz}
+            setDisplayQuiz={setDisplayQuiz}
           />
         );
       } else {
@@ -59,6 +67,8 @@ const CourseSection = ({
             idSection={idSection}
             subId={subId}
             setSelectedSubSection={setSelectedSubSection}
+            displayQuiz={displayQuiz}
+            setDisplayQuiz={setDisplayQuiz}
           />
         );
       }
@@ -71,6 +81,8 @@ const CourseSection = ({
             subId={subId}
             done={true}
             setSelectedSubSection={setSelectedSubSection}
+            displayQuiz={displayQuiz}
+            setDisplayQuiz={setDisplayQuiz}
           />
         );
       } else {
@@ -80,6 +92,8 @@ const CourseSection = ({
             idSection={idSection}
             subId={subId}
             setSelectedSubSection={setSelectedSubSection}
+            displayQuiz={displayQuiz}
+            setDisplayQuiz={setDisplayQuiz}
           />
         );
       }
