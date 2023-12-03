@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../../components/Navbar";
 import { Link } from "react-router-dom";
+import EnrollConfirmationPopup from "./EnrollConfirmationPopup";
 
 const CourseHomePage = () => {
+  const [showPopup, setShowPopup] = useState(false);
+
+  const handleEnrollClick = () => {
+    setShowPopup(true);
+  };
+  const onCancel = () => {
+    setShowPopup(false);
+  };
+  const onConfirm = () => {
+    setShowPopup(false);
+  };
   return (
     <div className="flex flex-col flex-wrap bg_light_courseQuizzy">
       <Navbar />
@@ -41,17 +53,23 @@ const CourseHomePage = () => {
               <div className="me-1">(4.0)</div>
               <div>459 Reviews</div>
             </div>
-            <div className="flex flex-row  justify-between items-center">
+            <div className=" flex flex-row  justify-between items-center">
               <div className="flex flex-row flex-wrap justify-center items-center gap-4">
                 <img src="/icons/3d_avatar_26.png" className="w-10" alt="" />
                 <div>by Charlie Spring</div>
               </div>
-              <Link
-                to="/"
+              <button
+                onClick={handleEnrollClick}
                 className="text-white flex flex-wrap justify-center align-middle rounded-xl bg_mid_courseQuizzy p-2 px-6"
               >
                 Enroll Me
-              </Link>
+              </button>
+              {showPopup && (
+                <EnrollConfirmationPopup
+                  onCancel={onCancel}
+                  onConfirm={onConfirm}
+                />
+              )}
             </div>
           </div>
           <div className="relative w-[40%]  flex justify-center">
