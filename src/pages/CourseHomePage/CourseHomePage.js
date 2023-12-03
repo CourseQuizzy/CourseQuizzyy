@@ -1,19 +1,29 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../../components/Navbar";
 import { Link } from "react-router-dom";
 import EnrollConfirmationPopup from "./EnrollConfirmationPopup";
+import EnrollSuccessPopup from "./EnrollSuccessPopup";
 
 const CourseHomePage = () => {
-  const [showPopup, setShowPopup] = useState(false);
-
+  const [showConfirmationPopup, setShowConfirmationPopup] = useState(false);
+  const [showEnrollAttemptStatus, setShowEnrollAttemptStatus] = useState(false);
+  const [isEnrolled, setIsEnrolled] = useState(false);
+  useEffect(() => {
+    console.log("ISENROLLED :: ", isEnrolled);
+  }, [isEnrolled]);
   const handleEnrollClick = () => {
-    setShowPopup(true);
+    setShowConfirmationPopup(true);
   };
   const onCancel = () => {
-    setShowPopup(false);
+    setShowConfirmationPopup(false);
   };
   const onConfirm = () => {
-    setShowPopup(false);
+    setShowConfirmationPopup(false);
+    setShowEnrollAttemptStatus(true);
+    setIsEnrolled(true);
+  };
+  const onCloseEnrollAttemptStatus = () => {
+    setShowEnrollAttemptStatus(false);
   };
   return (
     <div className="flex flex-col flex-wrap bg_light_courseQuizzy">
@@ -58,16 +68,31 @@ const CourseHomePage = () => {
                 <img src="/icons/3d_avatar_26.png" className="w-10" alt="" />
                 <div>by Charlie Spring</div>
               </div>
-              <button
-                onClick={handleEnrollClick}
-                className="text-white flex flex-wrap justify-center align-middle rounded-xl bg_mid_courseQuizzy p-2 px-6"
-              >
-                Enroll Me
-              </button>
-              {showPopup && (
+              {isEnrolled ? (
+                <Link
+                  to={"/"}
+                  className="text-white flex flex-wrap justify-center align-middle rounded-xl bg_mid_courseQuizzy p-2 px-6"
+                >
+                  Go To Course
+                </Link>
+              ) : (
+                <button
+                  onClick={handleEnrollClick}
+                  className="text-white flex flex-wrap justify-center align-middle rounded-xl bg_mid_courseQuizzy p-2 px-6"
+                >
+                  Enroll Me
+                </button>
+              )}
+              {showConfirmationPopup && (
                 <EnrollConfirmationPopup
                   onCancel={onCancel}
                   onConfirm={onConfirm}
+                />
+              )}
+              {showEnrollAttemptStatus && (
+                <EnrollSuccessPopup
+                  isSuccess={"success"}
+                  onCloseEnrollAttemptStatus={onCloseEnrollAttemptStatus}
                 />
               )}
             </div>
