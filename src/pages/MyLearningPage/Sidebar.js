@@ -19,21 +19,23 @@ const Sidebar = () => {
                     }} />
                     <h2 className="text-l group-hover:text-white">Dashboard</h2>
                 </Link>
-                <Link to="/" className="flex gap-2 p-2 items-start group rounded-lg hover:bg-[#3f72af] bg-[#3f72af]">
+                <Link to="/my-learning" className="flex gap-2 p-2 items-start group rounded-lg hover:bg-[#3f72af]">
+                {/* hover:bg-[#3f72af] bg-[#3f72af] */}
                     <ReactSVG src="icons/local_library.svg" className="h-2 group-hover:stroke-white stroke-white" fill="none" viewBox="24 24 24 24" alt="" beforeInjection={(svg) => {
                         svg.setAttribute('width', '25px');
                         svg.setAttribute('height', '25px');
                     }} />
-                    <h2 className="text-l group-hover:text-white text-white">My Learning</h2>
+                    {/* text-white */}
+                    <h2 className="text-l group-hover:text-white">My Learning</h2>
                 </Link>
-                <Link to="/" className="flex gap-2 p-2 items-start group rounded-lg hover:bg-[#3f72af]">
+                <Link to="/my-teaching" className="flex gap-2 p-2 items-start group rounded-lg hover:bg-[#3f72af]">
                     <ReactSVG src="icons/school.svg" className="h-2 group-hover:stroke-white" fill="none" viewBox="24 24 24 24" alt="" beforeInjection={(svg) => {
                         svg.setAttribute('width', '25px');
                         svg.setAttribute('height', '25px');
                     }} />
                     <h2 className="text-l group-hover:text-white">My Teaching</h2>
                 </Link>
-                <Link to="/" className="flex gap-2 p-2 items-start group rounded-lg hover:bg-[#3f72af]">
+                <Link to="/bookmark" className="flex gap-2 p-2 items-start group rounded-lg hover:bg-[#3f72af]">
                     <ReactSVG src="icons/bookmarks.svg" className="h-2 group-hover:stroke-white" fill="none" viewBox="24 24 24 24" alt="" beforeInjection={(svg) => {
                         svg.setAttribute('width', '25px');
                         svg.setAttribute('height', '25px');

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const CourseItem = ({completed}) => {
+const MyLearningItem = ({completed}) => {
     return(
         <> {completed ? <div className="course-list-item flex justify-end items-center"> 
         <div className="status-identity flex w-full gap-3 bg-white p-5 rounded-xl">
@@ -58,4 +58,4 @@ const CourseItem = ({completed}) => {
     );
 }
 
-export default CourseItem;
+export default MyLearningItem;
