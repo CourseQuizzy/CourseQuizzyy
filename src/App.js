@@ -7,6 +7,9 @@ import CourseHomePage from "./pages/CourseHomePage/CourseHomePage";
 import CourseContent from "./pages/CourseContent/CourseContent";
 import UserDashboard from "./pages/UserDashboard/UserDashboard";
 import MyTeachingPage from "./pages/MyLearningPage/MyTeachingPage";
+import LoginPage from "./pages/AuthPage/LoginPage";
+import SignUpPage from "./pages/AuthPage/SignUpPage";
+
 function App() {
   return (
     <BrowserRouter>
@@ -19,6 +22,8 @@ function App() {
         <Route path="/my-learning" exact element={<MyLearningPage />} />
         <Route path="/bookmark" exact element={<BookmarkPage />} />
         <Route path="/my-teaching" exact element={<MyTeachingPage />} />
+        <Route path="/login" exact element={<LoginPage />} />
+        <Route path="/register" exact element={<SignUpPage />} />
       </Routes>
     </BrowserRouter>
   );
