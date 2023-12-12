@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 
-const Navbar = ({logined}) => {
+const Navbar = ({ logined }) => {
   const inputRef = useRef(null);
   const expandSearchBar = () => {
     const form = document.querySelector("#searchBarForm");
@@ -61,25 +61,29 @@ const Navbar = ({logined}) => {
           <button className="">
             <img src="/icons/strip.svg" className="h-6" alt="" />
           </button>
-          {logined ? <>
-            <Link to="/" className="flex flex-row items-center gap-4">
-            Nick Nelson
-            <img src="3d_avatar_13.png" className="w-7" alt="" />
-            </Link>
-        </> : 
-        <><Link
-            to="/"
-            className="text-white flex flex-wrap justify-center align-middle"
-          >
-            Login
-          </Link>
-          <Link
-            to="/"
-            className="text-white flex flex-wrap justify-center align-middle rounded-xl bg_mid_courseQuizzy p-1 px-4"
-          >
-            Register
-          </Link></>
-          }
+          {logined ? (
+            <>
+              <Link to="/" className="flex flex-row items-center gap-4">
+                Nick Nelson
+                <img src="/icons/3d_avatar_13.png" className="w-7" alt="" />
+              </Link>
+            </>
+          ) : (
+            <>
+              <Link
+                to="/"
+                className="text-white flex flex-wrap justify-center align-middle"
+              >
+                Login
+              </Link>
+              <Link
+                to="/"
+                className="text-white flex flex-wrap justify-center align-middle rounded-xl bg_mid_courseQuizzy p-1 px-4"
+              >
+                Register
+              </Link>
+            </>
+          )}
         </div>
       </div>
     </div>

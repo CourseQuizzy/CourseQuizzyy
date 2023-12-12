@@ -10,7 +10,7 @@ const CourseContent = () => {
   const [displayQuiz, setDisplayQuiz] = useState(false);
   return (
     <div className="flex flex-col pt-14">
-      <Navbar />
+      <Navbar logined />
       <div className="flex flex-row min-h-screen w-full pt-3 pb-8">
         <div className="w-7/12 flex flex-col px-7">
           <VideoPlayer />
