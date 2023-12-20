@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import Navbar from "../../components/Navbar";
 import Sidebar from "./Sidebar";
-import MyLearningItem from "./MyLearningItem";
 import SortSearch from './SortSearch';
 
 const MyTeachingPage = () => {
