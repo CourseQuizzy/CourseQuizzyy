@@ -22,6 +22,7 @@ const MyLearningPage = () => {
                         <MyLearningItem />
                         <MyLearningItem />
                         <MyLearningItem completed/>
+                        <MyLearningItem ranked/>
                     </div>
                 </div>
             </div>

@@ -8,8 +8,10 @@ const SortSearch = () => {
                 <div className="filter-menu flex gap-2 items-center">
                     <p>Sort by: </p>
                     <select className="border-solid border-2 border-color-mid rounded-xl p-1" name="cars" id="cars">
-                        <option value="volvo">Ongoing</option>
-                        <option value="saab">Completed</option>
+                        <option value="ongoing">Ongoing</option>
+                        <option value="completed">Completed</option>
+                        <option value="ranked">Ranked</option>
+                        <option value="unrated">Unrated</option>
                     </select>
                 </div>
             </div>

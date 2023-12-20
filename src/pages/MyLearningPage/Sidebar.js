@@ -12,7 +12,7 @@ const Sidebar = () => {
                 <h1 className="text-xl">A Student, An Instructor</h1>
             </div>
             <div className="menu flex flex-col gap-1">
-                <Link to="/" className="flex gap-2 p-2 items-start group rounded-lg hover:bg-[#3f72af]">
+                <Link to="/my-learning" className="flex gap-2 p-2 items-start group rounded-lg hover:bg-[#3f72af]">
                     <ReactSVG src="icons/dashboard.svg" className="h-2 group-hover:stroke-white" fill="none" viewBox="24 24 24 24" alt="" beforeInjection={(svg) => {
                         svg.setAttribute('width', '25px');
                         svg.setAttribute('height', '25px');

@@ -35,47 +35,48 @@ const MyTeachingPage = () => {
                                 </div>
                                 <h2 className="font-bold justify-self-center">Total 12345</h2>
                             </div>
-                            <table className="table-fixed mt-6 mb-4">
-                                <thead className="">
-                                    <tr className="">
-                                        <td className="w-1/4">Student<img src="icons/swap_vert.svg" className="inline ml-1" alt=""></img></td>
-                                        <td className="w-1/4">StudentID<img src="icons/swap_vert.svg" className="inline ml-1" alt=""></img></td>
-                                        <td className="w-1/4">Course Name<img src="icons/swap_vert.svg" className="inline ml-1" alt=""></img></td>
-                                        <td className="w-1/5">Date Enrolled<img src="icons/swap_vert.svg" className="inline ml-1" alt=""></img></td>
-                                        <td className="w-1/5">Status<img src="icons/swap_vert.svg" className="inline ml-1" alt=""></img></td>
-                                    </tr>
-                                </thead>
-                                <tbody className="">
-                                    <tr className="border-2 rounded-xl border-y-[#dbe2ef] border-x-transparent">
-                                        <td className=""><img src="11.png" className="inline mr-2 border-separate p-1" alt=""></img>Elle Argent</td>
-                                        <td>12345</td>
-                                        <td>UI/UX Design</td>
-                                        <td>18 October, 2023</td>
-                                        <td className="border-separate pr-2">Completed</td>
-                                    </tr>
-                                    <tr className="border-2 rounded-xl border-y-[#dbe2ef] border-x-transparent">
-                                        <td className=""><img src="11.png" className="inline mr-2 border-separate p-1" alt=""></img>Elle Argent</td>
-                                        <td>12345</td>
-                                        <td>UI/UX Design</td>
-                                        <td>18 October, 2023</td>
-                                        <td className="border-separate pr-2">Completed</td>
-                                    </tr>
-                                    <tr className="border-2 rounded-xl border-y-[#dbe2ef] border-x-transparent">
-                                        <td className=""><img src="11.png" className="inline mr-2 border-separate p-1" alt=""></img>Elle Argent</td>
-                                        <td>12345</td>
-                                        <td>UI/UX Design</td>
-                                        <td>18 October, 2023</td>
-                                        <td className="border-separate pr-2">Completed</td>
-                                    </tr>
-                                    <tr className="border-2 rounded-xl border-y-[#dbe2ef] border-x-transparent">
-                                        <td className=""><img src="11.png" className="inline mr-2 border-separate p-1" alt=""></img>Elle Argent</td>
-                                        <td>12345</td>
-                                        <td>UI/UX Design</td>
-                                        <td>18 October, 2023</td>
-                                        <td className="border-separate pr-2">Completed</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div className="table w-full mt-6 mb-4">
+                                <div className="table-row-group">
+                                    <div className="table-row">
+                                        <div className="table-cell">Student<img src="icons/swap_vert.svg" className="inline ml-1" alt=""></img></div>
+                                        <div className="table-cell">StudentID<img src="icons/swap_vert.svg" className="inline ml-1" alt=""></img></div>
+                                        <div className="table-cell">Course Name<img src="icons/swap_vert.svg" className="inline ml-1" alt=""></img></div>
+                                        <div className="table-cell">Date Enrolled<img src="icons/swap_vert.svg" className="inline ml-1" alt=""></img></div>
+                                        <div className="table-cell">Status<img src="icons/swap_vert.svg" className="inline ml-1" alt=""></img></div>
+                                    </div>
+                                    <div className="table-row">
+                                        <div className="p-1 table-cell border-2 border-r-transparent border-[#dbe2ef] rounded-ss-xl rounded-es-xl"><img src="11.png" className="inline mr-2 p-1" alt=""></img>Elle Argent</div>
+                                        <div className="table-cell border-2 border-x-transparent border-[#dbe2ef]">12345</div>
+                                        <div className="table-cell border-2 border-x-transparent border-[#dbe2ef]">UI/UX Design</div>
+                                        <div className="table-cell border-2 border-x-transparent border-[#dbe2ef]">18 October, 2023</div>
+                                        <div className="table-cell border-2 border-l-transparent border-[#dbe2ef] rounded-se-xl rounded-ee-xl">Completed</div>
+                                    </div>
+                                    <div className="h-[2.5px]"></div>
+                                    <div className="table-row">
+                                        <div className="p-1 table-cell border-2 border-r-transparent border-[#dbe2ef] rounded-ss-xl rounded-es-xl"><img src="11.png" className="inline mr-2 p-1" alt=""></img>Elle Argent</div>
+                                        <div className="table-cell border-2 border-x-transparent border-[#dbe2ef]">12345</div>
+                                        <div className="table-cell border-2 border-x-transparent border-[#dbe2ef]">UI/UX Design</div>
+                                        <div className="table-cell border-2 border-x-transparent border-[#dbe2ef]">18 October, 2023</div>
+                                        <div className="table-cell border-2 border-l-transparent border-[#dbe2ef] rounded-se-xl rounded-ee-xl">Completed</div>
+                                    </div>
+                                    <div className="h-[2.5px]"></div>
+                                    <div className="table-row">
+                                        <div className="p-1 table-cell border-2 border-r-transparent border-[#dbe2ef] rounded-ss-xl rounded-es-xl"><img src="11.png" className="inline mr-2 p-1" alt=""></img>Elle Argent</div>
+                                        <div className="table-cell border-2 border-x-transparent border-[#dbe2ef]">12345</div>
+                                        <div className="table-cell border-2 border-x-transparent border-[#dbe2ef]">UI/UX Design</div>
+                                        <div className="table-cell border-2 border-x-transparent border-[#dbe2ef]">18 October, 2023</div>
+                                        <div className="table-cell border-2 border-l-transparent border-[#dbe2ef] rounded-se-xl rounded-ee-xl">Completed</div>
+                                    </div>
+                                    <div className="h-[2.5px]"></div>
+                                    <div className="table-row">
+                                        <div className="p-1 table-cell border-2 border-r-transparent border-[#dbe2ef] rounded-ss-xl rounded-es-xl"><img src="11.png" className="inline mr-2 p-1" alt=""></img>Elle Argent</div>
+                                        <div className="table-cell border-2 border-x-transparent border-[#dbe2ef]">12345</div>
+                                        <div className="table-cell border-2 border-x-transparent border-[#dbe2ef]">UI/UX Design</div>
+                                        <div className="table-cell border-2 border-x-transparent border-[#dbe2ef]">18 October, 2023</div>
+                                        <div className="table-cell border-2 border-l-transparent border-[#dbe2ef] rounded-se-xl rounded-ee-xl">Completed</div>
+                                    </div>
+                                </div>
+                            </div>
                             <div className="pagination flex self-center">
                                 <img src="icons/chevron_left.svg" alt=""></img>
                                 <div className="p-2">1</div>
