@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 
-const Navbar = ({logined}) => {
+const Navbar = ({ logined }) => {
   const inputRef = useRef(null);
   const expandSearchBar = () => {
     const form = document.querySelector("#searchBarForm");
@@ -19,7 +19,7 @@ const Navbar = ({logined}) => {
     // console.log(form.classList)
   };
   return (
-    <div className="flex flex-row flex-wrap justify-between items-center fixed top-0  w-full shadow-lg backdrop-blur-xl bg_courseQuizzy  z-50 h-14 sm:ps-14 sm:pe-8 py-2 px-5 poppins text-xs">
+    <div className="flex flex-row flex-wrap justify-between items-center fixed top-0  w-full  backdrop-blur-xl bg_courseQuizzy  z-50 h-14 sm:ps-20 sm:pe-8 py-2 px-5 poppins text-xs">
       <Link
         to="/"
         className="text-white font-semibold text-2xl flex flex-wrap justify-center align-middle "
@@ -42,7 +42,7 @@ const Navbar = ({logined}) => {
         <div className="flex flex-row flex-wrap items-center justify-center gap-5">
           <form
             id="searchBarForm"
-            action=""
+            action="/catalogue"
             className="hidden flex-row flex-wrap items-center justify-center gap-5"
           >
             <input
@@ -52,34 +52,41 @@ const Navbar = ({logined}) => {
               onBlur={expandSearchBar}
             />
             <button className="submit">
-              <img src="icons/search.svg" className="w-5 " alt="" />
+              <img src="/icons/search.svg" className="w-5 " alt="" />
             </button>
           </form>
           <button id="expandButton" onClick={expandSearchBar} className="">
-            <img src="icons/search.svg" className="w-5" alt="" />
+            <img src="/icons/search.svg" className="w-5" alt="" />
           </button>
           <button className="">
-            <img src="icons/strip.svg" className="h-6" alt="" />
+            <img src="/icons/strip.svg" className="h-6" alt="" />
           </button>
-          {logined ? <>
-            <Link to="/" className="flex flex-row items-center gap-4">
-            Nick Nelson
-            <img src="3d_avatar_13.png" className="w-7" alt="" />
-            </Link>
-        </> : 
-        <><Link
-            to="/"
-            className="text-white flex flex-wrap justify-center align-middle"
-          >
-            Login
-          </Link>
-          <Link
-            to="/"
-            className="text-white flex flex-wrap justify-center align-middle rounded-xl bg_mid_courseQuizzy p-1 px-4"
-          >
-            Register
-          </Link></>
-          }
+          {logined ? (
+            <>
+              <Link
+                to="/dashboard"
+                className="flex flex-row items-center gap-4"
+              >
+                Nick Nelson
+                <img src="/icons/3d_avatar_13.png" className="w-7" alt="" />
+              </Link>
+            </>
+          ) : (
+            <>
+              <Link
+                to="/login"
+                className="text-white flex flex-wrap justify-center align-middle"
+              >
+                Login
+              </Link>
+              <Link
+                to="/register"
+                className="text-white flex flex-wrap justify-center align-middle rounded-xl bg_mid_courseQuizzy p-1 px-4"
+              >
+                Register
+              </Link>
+            </>
+          )}
         </div>
       </div>
     </div>
