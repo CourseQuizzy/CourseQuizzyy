@@ -4,7 +4,7 @@ import Navbar from "../../components/Navbar";
 const UserDashboard = () => {
   return (
     <div className="flex flex-col bg_light_courseQuizzy">
-      <Navbar logined />
+      <Navbar />
       <div className="flex flex-row w-full min-h-screen pt-14">
         <div className="flex w-[27%]">
           <Sidebar />
