@@ -12,6 +12,10 @@ import SignUpPage from "./pages/AuthPage/SignUpPage";
 import AddCourseStep1 from "./pages/CreateCourse/AddCourse";
 import AddCourseStep2 from "./pages/CreateCourse/AddCourse2";
 
+import FillQuizLsa from "./pages/FillQuiz/LongShortAnswer";
+import FillQuizMsp from "./pages/FillQuiz/Msp";
+import FillQuizCp from "./pages/FillQuiz/confirmpage";
+import FillQuizRC from "./pages/FillQuiz/ReviewCourse";
 function App() {
   return (
     <BrowserRouter>
@@ -28,6 +32,10 @@ function App() {
         <Route path="/register" exact element={<SignUpPage />} />
         <Route path="/courses/create" exact element={<AddCourseStep1 />} />
         <Route path="/courses/create2" exact element={<AddCourseStep2 />} />
+        <Route path="/popfilllsa" exact element={<FillQuizLsa />} />
+        <Route path="/popfillmsp" exact element={<FillQuizMsp />} />
+        <Route path="/popfillcp" exact element={<FillQuizCp />} />
+        <Route path="/popfillrc" exact element={<FillQuizRC />} />
       </Routes>
     </BrowserRouter>
   );
