@@ -63,7 +63,10 @@ const Navbar = ({ logined }) => {
           </button>
           {logined ? (
             <>
-              <Link to="/" className="flex flex-row items-center gap-4">
+              <Link
+                to="/dashboard"
+                className="flex flex-row items-center gap-4"
+              >
                 Nick Nelson
                 <img src="/icons/3d_avatar_13.png" className="w-7" alt="" />
               </Link>
@@ -71,13 +74,13 @@ const Navbar = ({ logined }) => {
           ) : (
             <>
               <Link
-                to="/"
+                to="/login"
                 className="text-white flex flex-wrap justify-center align-middle"
               >
                 Login
               </Link>
               <Link
-                to="/"
+                to="/register"
                 className="text-white flex flex-wrap justify-center align-middle rounded-xl bg_mid_courseQuizzy p-1 px-4"
               >
                 Register
