@@ -3,6 +3,9 @@ import Catalogue from "./pages/CourseCatalogue/CourseCatalogue";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CourseHomePage from "./pages/CourseHomePage/CourseHomePage";
 import EnrollConfirmationPopup from "./pages/CourseHomePage/EnrollConfirmationPopup";
+import PopUpContent from "./pages/PopUpPage/FirstPage";
+import SecContent from "./pages/PopUpPage/SecPage";
+
 function App() {
   return (
     <BrowserRouter>
@@ -15,6 +18,8 @@ function App() {
           exact
           element={<EnrollConfirmationPopup />}
         />
+        <Route path="/popcontent" exact element={<PopUpContent />} />
+        <Route path="/seccontent" exact element={<SecContent />} />
       </Routes>
     </BrowserRouter>
   );
