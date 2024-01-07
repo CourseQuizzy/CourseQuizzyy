@@ -3,6 +3,10 @@ import Catalogue from "./pages/CourseCatalogue/CourseCatalogue";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CourseHomePage from "./pages/CourseHomePage/CourseHomePage";
 import CourseContent from "./pages/CourseContent/CourseContent";
+import FillQuizLsa from "./pages/FillQuiz/LongShortAnswer";
+import FillQuizMsp from "./pages/FillQuiz/Msp";
+import FillQuizCp from "./pages/FillQuiz/confirmpage";
+import FillQuizRC from "./pages/FillQuiz/ReviewCourse";
 function App() {
   return (
     <BrowserRouter>
@@ -11,6 +15,10 @@ function App() {
         <Route path="/catalogue" exact element={<Catalogue />} />
         <Route path="/courses/1" exact element={<CourseHomePage />} />
         <Route path="/courses/1/contents" exact element={<CourseContent />} />
+        <Route path="/popfilllsa" exact element={<FillQuizLsa />} />
+        <Route path="/popfillmsp" exact element={<FillQuizMsp />} />
+        <Route path="/popfillcp" exact element={<FillQuizCp />} />
+        <Route path="/popfillrc" exact element={<FillQuizRC />} />
       </Routes>
     </BrowserRouter>
   );
