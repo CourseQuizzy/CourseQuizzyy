@@ -15,6 +15,10 @@ import PopUpContent from "./pages/PopUpPage/FirstPage";
 import SecContent from "./pages/PopUpPage/SecPage";
 import ConfirmationPage from "./pages/CreateCourse/ConfirmationPage";
 
+import FillQuizLsa from "./pages/FillQuiz/LongShortAnswer";
+import FillQuizMsp from "./pages/FillQuiz/Msp";
+import FillQuizCp from "./pages/FillQuiz/confirmpage";
+import FillQuizRC from "./pages/FillQuiz/ReviewCourse";
 function App() {
   return (
     <BrowserRouter>
@@ -34,6 +38,10 @@ function App() {
         <Route path="/popcontent" exact element={<PopUpContent />} />
         <Route path="/seccontent" exact element={<SecContent />} />
         <Route path="/confirm" exact element={<ConfirmationPage />} />
+        <Route path="/popfilllsa" exact element={<FillQuizLsa />} />
+        <Route path="/popfillmsp" exact element={<FillQuizMsp />} />
+        <Route path="/popfillcp" exact element={<FillQuizCp />} />
+        <Route path="/popfillrc" exact element={<FillQuizRC />} />
       </Routes>
     </BrowserRouter>
   );
