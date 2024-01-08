@@ -56,6 +56,9 @@ html::-webkit-scrollbar-thumb {
 .bg_light_mid_courseQuizzy {
   background-color: #dfeeff;
 }
+.border_light_mid_courseQuizzy {
+  border-color: #dfeeff;
+}
 .light_courseQuizzy {
   color: #dbe2ef;
 }
@@ -72,5 +75,15 @@ html::-webkit-scrollbar-thumb {
   border-color: #112d4e;
 }
 .border_light_courseQuizzy {
+  border-color: #3f72af;
+}
+/* Abram */
+.img_gray_bg_color {
+  background-color: #c4c4c4;
+}
+.btn-danger {
+  background-color: #e34444;
+}
+.border-color-mid {
   border-color: #3f72af;
 }
