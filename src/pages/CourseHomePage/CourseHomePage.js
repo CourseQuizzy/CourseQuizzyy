@@ -27,7 +27,7 @@ const CourseHomePage = () => {
   };
   return (
     <div className="flex flex-col flex-wrap bg_light_courseQuizzy">
-      <Navbar />
+      <Navbar logined />
       <div className="flex flex-col flex-wrap min-h-screen w-full ">
         <div
           id="header_courseHomePage"

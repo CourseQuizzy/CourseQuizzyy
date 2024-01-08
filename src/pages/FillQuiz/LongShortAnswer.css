@@ -2,6 +2,9 @@
     background-color: #f2f7ff;
     height: 137.8rem;
     overflow: hidden;
+    top: 50px;
+    left: auto;
+    right: auto;
     position: relative;
     width: 100%;
   
@@ -11,7 +14,7 @@
       box-shadow: 0 0.4rem 3rem rgba(63, 114, 175, 0.25);
       height: 90.2rem;
       left: 38.8rem;
-      position: absolute;
+      position: fixed;
       top: 26.2rem;
       width: 114.3rem;
     }
@@ -23,7 +26,7 @@
       height: 4.4rem;
       left: 65.6rem;
       line-height: 1.2;
-      position: absolute;
+      position: fixed;
       top: 31.4rem;
       white-space: nowrap;
       width: 60.9rem;
@@ -34,7 +37,7 @@
       flex-direction: column;
       height: 18.6rem;
       left: 44.1rem;
-      position: absolute;
+      position: fixed;
       top: 46.5rem;
       width: 103.8rem;
   
@@ -108,7 +111,7 @@
       height: 3.9rem;
       left: 44.1rem;
       line-height: 1.2;
-      position: absolute;
+      position: fixed;
       top: 69.6rem;
       white-space: nowrap;
       width: 11.1rem;
@@ -119,7 +122,7 @@
       box-sizing: border-box;
       height: 13.9rem;
       left: 44.2rem;
-      position: absolute;
+      position: fixed;
       top: 80.6rem;
       width: 103.7rem;
     }
@@ -129,7 +132,7 @@
       box-sizing: border-box;
       height: 7.6rem;
       left: 51.6rem;
-      position: absolute;
+      position: fixed;
       top: 95.6rem;
       width: 96.3rem;
     }
@@ -139,7 +142,7 @@
       box-sizing: border-box;
       height: 4.7rem;
       left: 44.2rem;
-      position: absolute;
+      position: fixed;
       top: 75.9rem;
       width: 103.7rem;
     }
@@ -152,7 +155,7 @@
       height: 8.7rem;
       left: 47.5rem;
       line-height: 1.2;
-      position: absolute;
+      position: fixed;
       top: 82.6rem;
       width: 86rem;
     }
@@ -165,7 +168,7 @@
       height: 5.8rem;
       left: 57rem;
       line-height: 1.2;
-      position: absolute;
+      position: fixed;
       top: 96.2rem;
       width: 73.8rem;
     }
@@ -173,7 +176,7 @@
       background-color: #c7c7c7;
       height: 4.7rem;
       left: 141.1rem;
-      position: absolute;
+      position: fixed;
       top: 75.9rem;
       width: 6.7rem;
     }
@@ -186,7 +189,7 @@
       height: 2.9rem;
       left: 142.3rem;
       line-height: 1.2;
-      position: absolute;
+      position: fixed;
       top: 76.7rem;
       white-space: nowrap;
       width: 4.2rem;
@@ -195,7 +198,7 @@
       background-color: #c7c7c7;
       height: 4.7rem;
       left: 140.3rem;
-      position: absolute;
+      position: fixed;
       top: 96.3rem;
       width: 6.7rem;
     }
@@ -208,7 +211,7 @@
       height: 2.9rem;
       left: 141.5rem;
       line-height: 1.2;
-      position: absolute;
+      position: fixed;
       top: 97.1rem;
       white-space: nowrap;
       width: 4.2rem;
@@ -220,7 +223,7 @@
       height: 4.3rem;
       left: 44.2rem;
       padding-right: 0.3526rem;
-      position: absolute;
+      position: fixed;
       top: 40.2rem;
       width: 48rem;
   
@@ -267,7 +270,7 @@
       justify-content: center;
       left: 133.4rem;
       line-height: 1.5;
-      position: absolute;
+      position: fixed;
       text-align: center;
       top: 107.2rem;
       white-space: nowrap;

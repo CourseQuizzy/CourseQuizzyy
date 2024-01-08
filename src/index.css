@@ -77,3 +77,13 @@ html::-webkit-scrollbar-thumb {
 .border_light_courseQuizzy {
   border-color: #3f72af;
 }
+/* Abram */
+.img_gray_bg_color {
+  background-color: #c4c4c4;
+}
+.btn-danger {
+  background-color: #e34444;
+}
+.border-color-mid {
+  border-color: #3f72af;
+}
