@@ -56,7 +56,9 @@ const SignUpPage = () => {
                 />
               </div>
               <div className="w-full flex justify-center items-center poppins mb-2 bg_mid_courseQuizzy p-1 px-4 text-white font-semibold rounded-md text-xs">
-                <button type="submit">SIGN UP</button>
+                <Link to={"/dashboard"} type="submit">
+                  SIGN UP
+                </Link>
               </div>
             </form>
             <div className="flex justify-center items-center font-regular lato text-xs mb-2">

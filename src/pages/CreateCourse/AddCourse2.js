@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
-
+import { Link } from "react-router-dom";
 const AddCourseStep2 = () => {
   return (
     <div className="flex flex-col  justify-start bg_light_courseQuizzy ">
@@ -41,12 +41,15 @@ const AddCourseStep2 = () => {
                     </div>
                   </div>
                   <div className="flex flex-row text-sm">
-                    <button className="border-2 rounded-2xl px-2 py-1">
+                    <Link
+                      to={"/popcontent"}
+                      className="border-2 rounded-2xl px-2 py-1"
+                    >
                       + Content
-                    </button>
-                    <button className="border-2 rounded-2xl px-2 py-1 ml-2">
+                    </Link>
+                    <Link className="border-2 rounded-2xl px-2 py-1 ml-2">
                       + Quiz
-                    </button>
+                    </Link>
                   </div>
                 </div>
                 <div>
@@ -72,9 +75,12 @@ const AddCourseStep2 = () => {
                     </div>
                   </div>
                   <div className="flex flex-row text-sm">
-                    <button className="border-2 rounded-2xl px-2 py-1">
+                    <Link
+                      to={"/popcontent"}
+                      className="border-2 rounded-2xl px-2 py-1"
+                    >
                       + Content
-                    </button>
+                    </Link>
                   </div>
                 </div>
                 {/* Section's Question 1*/}
@@ -104,9 +110,12 @@ const AddCourseStep2 = () => {
                   </div>
                 </div>
                 <div className="flex justify-end items-center w-full">
-                  <button className="my-2 border-2 rounded-2xl px-2 py-1 border-[#ACD3FF] text-sm">
+                  <Link
+                    to={"/seccontent"}
+                    className="my-2 border-2 rounded-2xl px-2 py-1 border-[#ACD3FF] text-sm"
+                  >
                     + Question
-                  </button>
+                  </Link>
                 </div>
                 {/* Section's Lecture 2 */}
                 <div className="flex flex-row justify-between items-center rounded-xl mt-2 bg_light_courseQuizzy px-5 py-2">
@@ -119,12 +128,18 @@ const AddCourseStep2 = () => {
                     </div>
                   </div>
                   <div className="flex flex-row text-sm">
-                    <button className="border-2 rounded-2xl px-2 py-1">
+                    <Link
+                      to={"/popcontent"}
+                      className="border-2 rounded-2xl px-2 py-1"
+                    >
                       + Content
-                    </button>
-                    <button className="border-2 rounded-2xl px-2 py-1 ml-2">
+                    </Link>
+                    <Link
+                      to={"/seccontent"}
+                      className="border-2 rounded-2xl px-2 py-1 ml-2"
+                    >
                       + Quiz
-                    </button>
+                    </Link>
                   </div>
                 </div>
                 <div>
@@ -140,9 +155,12 @@ const AddCourseStep2 = () => {
           </div>
 
           <div className="flex justify-end items-center w-full">
-            <div className="bg_mid_courseQuizzy text-white pl-5 pr-5 pt-2 pb-2 rounded-xl border-2 w-fit font-semibold">
+            <Link
+              to={"/confirm"}
+              className="bg_mid_courseQuizzy text-white pl-5 pr-5 pt-2 pb-2 rounded-xl border-2 w-fit font-semibold"
+            >
               Next
-            </div>
+            </Link>
           </div>
         </div>
       </div>

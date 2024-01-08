@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const PopUpContent = () => {
   return (
@@ -66,9 +67,12 @@ const PopUpContent = () => {
             </div>
           </div>
           <div className="text-end">
-            <button className="rounded-xl bg_mid_courseQuizzy text-white px-6 py-1 my-2">
+            <Link
+              to={"/courses/create2"}
+              className="rounded-xl bg_mid_courseQuizzy text-white px-6 py-1 my-2"
+            >
               Submit
-            </button>
+            </Link>
           </div>
         </div>
       </div>

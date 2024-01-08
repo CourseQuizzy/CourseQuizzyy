@@ -13,6 +13,7 @@ import AddCourseStep1 from "./pages/CreateCourse/AddCourse";
 import AddCourseStep2 from "./pages/CreateCourse/AddCourse2";
 import PopUpContent from "./pages/PopUpPage/FirstPage";
 import SecContent from "./pages/PopUpPage/SecPage";
+import ConfirmationPage from "./pages/CreateCourse/ConfirmationPage";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/courses/create2" exact element={<AddCourseStep2 />} />
         <Route path="/popcontent" exact element={<PopUpContent />} />
         <Route path="/seccontent" exact element={<SecContent />} />
+        <Route path="/confirm" exact element={<ConfirmationPage />} />
       </Routes>
     </BrowserRouter>
   );

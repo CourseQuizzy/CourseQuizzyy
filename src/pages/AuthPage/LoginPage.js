@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const LoginPage = () => {
   return (
     <div className="flex flex-col flex-wrap">
-      <Navbar  />
+      <Navbar />
       <div className="flex flex-col justify-center items-center min-h-screen">
         <div className="poppins courseQuizzy font-semibold text-2xl">
           CourseQuizzy
@@ -43,38 +43,40 @@ const LoginPage = () => {
                 />
               </div>
               <div className="w-full flex justify-center items-center poppins mb-2 bg_mid_courseQuizzy p-1 px-4 text-white font-semibold rounded-md text-xs">
-                <button type="submit">LOGIN</button>
+                <Link to={"/dashboard"} type="submit">
+                  LOGIN
+                </Link>
+              </div>
+              <div className="flex justify-center items-center font-regular lato text-xs mb-2">
+                Or continue with
+              </div>
+              <div className="">
+                <Link
+                  to=""
+                  className="border-2 flex flex-wrap poppins mb-2 p-1 px-4 text-black font-semibold justify-center rounded-md text-xs"
+                >
+                  <img
+                    src="/icons/icons-google.svg"
+                    alt="login-with-google"
+                    className="h-4 w-4 mx-2"
+                  />
+                  <div>Google</div>
+                </Link>
+              </div>
+              <div>
+                <Link
+                  to=""
+                  className="border-2 flex flex-wrap poppins mb-2 p-1 px-4 text-black font-semibold justify-center rounded-md text-xs"
+                >
+                  <img
+                    src="/icons/icons-facebook.svg"
+                    alt="login-with-facebook"
+                    className="h-4 w-4 mx-2"
+                  />
+                  <div>Facebook</div>
+                </Link>
               </div>
             </form>
-            <div className="flex justify-center items-center font-regular lato text-xs mb-2">
-              Or continue with
-            </div>
-            <div className="">
-              <Link
-                to=""
-                className="border-2 flex flex-wrap poppins mb-2 p-1 px-4 text-black font-semibold justify-center rounded-md text-xs"
-              >
-                <img
-                  src="/icons/icons-google.svg"
-                  alt="login-with-google"
-                  className="h-4 w-4 mx-2"
-                />
-                <div>Google</div>
-              </Link>
-            </div>
-            <div>
-              <Link
-                to=""
-                className="border-2 flex flex-wrap poppins mb-2 p-1 px-4 text-black font-semibold justify-center rounded-md text-xs"
-              >
-                <img
-                  src="/icons/icons-facebook.svg"
-                  alt="login-with-facebook"
-                  className="h-4 w-4 mx-2"
-                />
-                <div>Facebook</div>
-              </Link>
-            </div>
           </div>
         </div>
       </div>

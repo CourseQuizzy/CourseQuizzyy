@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const SecContent = () => {
   return (
@@ -18,6 +19,14 @@ const SecContent = () => {
                 <option className="">Multiple Select Questions</option>
               </select>
             </label>
+            <div>
+              <Link
+                to={"/popfillmsp"}
+                className="bg_mid_courseQuizzy text-white  px-2 py-1 rounded-xl"
+              >
+                Change to Multiple Select Questions
+              </Link>
+            </div>
           </div>
         </div>
         <div class="flex flex-col border-2 border-gray-200 w-full mb-4">
@@ -323,9 +332,12 @@ const SecContent = () => {
           <button className="border-2 px-2 py-1">+ Add Choice</button>
         </div>
         <div className="flex items-center justify-center w-full">
-          <button className="border-2 px-4 py-1 bg_mid_courseQuizzy rounded-xl text-white text-sm shadow-lg mb-8">
+          <Link
+            to={"/courses/create2"}
+            className="border-2 px-4 py-1 bg_mid_courseQuizzy rounded-xl text-white text-sm shadow-lg mb-8"
+          >
             Submit
-          </button>
+          </Link>
         </div>
       </div>
     </div>

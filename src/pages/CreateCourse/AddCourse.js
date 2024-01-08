@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
-
+import { Link } from "react-router-dom";
 
 const AddCourseStep1 = () => {
   return (
@@ -85,9 +85,12 @@ const AddCourseStep1 = () => {
           </div>
 
           <div className="flex justify-end items-center w-full">
-            <button className="bg_mid_courseQuizzy text-white pl-5 pr-5 pt-2 pb-2 rounded-xl border-2 w-fit font-semibold">
+            <Link
+              to={"/courses/create2"}
+              className="bg_mid_courseQuizzy text-white pl-5 pr-5 pt-2 pb-2 rounded-xl border-2 w-fit font-semibold"
+            >
               Next
-            </button>
+            </Link>
           </div>
         </div>
       </div>

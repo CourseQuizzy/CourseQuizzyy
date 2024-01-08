@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -10,26 +11,38 @@ const Sidebar = () => {
         <div>A Student, An Instructor</div>
       </div>
       <div className="flex flex-col w-full justify-center items-center">
-        <button className="flex flex-row justify-start items-center shadow-md w-40 bg_mid_courseQuizzy rounded-xl py-2 ">
+        <Link
+          to={"/dashboard"}
+          className="flex flex-row justify-start items-center shadow-md w-40 bg_mid_courseQuizzy rounded-xl py-2 "
+        >
           <img src="/icons/dashboard.svg" className="w-5 mx-5 me-4" alt="" />
           <div className="text-white">Dashboard</div>
-        </button>
-        <button className="flex flex-row justify-start items-center  w-40 rounded-xl py-2">
+        </Link>
+        <Link
+          to={"/my-learning"}
+          className="flex flex-row justify-start items-center  w-40 rounded-xl py-2"
+        >
           <img
             src="/icons/local_library.svg"
             className="w-5 mx-5 me-4"
             alt=""
           />
           <div>My Learning</div>
-        </button>
-        <button className="flex flex-row justify-start items-center  w-40 rounded-xl py-2">
+        </Link>
+        <Link
+          to={"/my-teaching"}
+          className="flex flex-row justify-start items-center  w-40 rounded-xl py-2"
+        >
           <img src="/icons/school.svg" className="w-5 mx-5 me-4" alt="" />
           <div>My Teaching</div>
-        </button>
-        <button className="flex flex-row justify-start items-center  w-40 rounded-xl py-2">
+        </Link>
+        <Link
+          to={"/bookmark"}
+          className="flex flex-row justify-start items-center  w-40 rounded-xl py-2"
+        >
           <img src="/icons/bookmarks.svg" className="w-5 mx-5 me-4" alt="" />
           <div>Bookmark</div>
-        </button>
+        </Link>
       </div>
       <div className="w-full flex justify-center items-center mb-2">
         <button className="flex flex-row justify-center items-center py-2 px-16 bg-red-600 text-white rounded-xl">
