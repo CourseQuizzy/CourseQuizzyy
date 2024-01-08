@@ -9,6 +9,10 @@ import UserDashboard from "./pages/UserDashboard/UserDashboard";
 import MyTeachingPage from "./pages/MyLearningPage/MyTeachingPage";
 import LoginPage from "./pages/AuthPage/LoginPage";
 import SignUpPage from "./pages/AuthPage/SignUpPage";
+import AddCourseStep1 from "./pages/CreateCourse/AddCourse";
+import AddCourseStep2 from "./pages/CreateCourse/AddCourse2";
+import PopUpContent from "./pages/PopUpPage/FirstPage";
+import SecContent from "./pages/PopUpPage/SecPage";
 
 function App() {
   return (
@@ -24,6 +28,10 @@ function App() {
         <Route path="/my-teaching" exact element={<MyTeachingPage />} />
         <Route path="/login" exact element={<LoginPage />} />
         <Route path="/register" exact element={<SignUpPage />} />
+        <Route path="/courses/create" exact element={<AddCourseStep1 />} />
+        <Route path="/courses/create2" exact element={<AddCourseStep2 />} />
+        <Route path="/popcontent" exact element={<PopUpContent />} />
+        <Route path="/seccontent" exact element={<SecContent />} />
       </Routes>
     </BrowserRouter>
   );
